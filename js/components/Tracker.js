@@ -3,8 +3,8 @@ import { Activity, dom } from "../exports.js"
 export default class Tracker {
   constructor({name, activities}){
     this.name = name
-    this.activities = Object.keys(activities).map(key => new Activity(key, activities[key], this))
     this.selected = "Daily"
+    this.activities = Object.keys(activities).map(key => new Activity(key, activities[key], this))
   }
 
   render(){
@@ -23,6 +23,7 @@ export default class Tracker {
       if (target.classList.contains("option")){
         this.selected = target.innerText
         this.renderOptions()
+        this.activities.forEach(activity => activity.update())
       }
     })
   }
