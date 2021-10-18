@@ -1,24 +1,29 @@
-import { Activity } from "../exports.js"
+import { Activity, dom } from "../exports.js"
 
 export default class Tracker {
   constructor({name, activities}){
     this.name = name
-    this.activities = Object.keys(activities).map(key => new Activity(key, activities[key]))
+    this.activities = Object.keys(activities).map(key => new Activity(key, activities[key], this))
     this.selected = "Daily"
   }
 
   render(){
     document.getElementById("name").innerText = this.name
     this.renderOptions()
+    this.appendEventListener()
   }
 
   renderOptions(){
-    const nav = document.querySelector("nav")
-    const options = [...nav.children]
+    const options = [...dom.nav.children]
     options.forEach(item => item.innerText === this.selected ? item.classList.add("selected") : item.classList.remove("selected"))
   }
 
-  // appendEventListener(){
-
-  // }
+  appendEventListener(){
+    dom.nav.addEventListener("click", ({target}) => {
+      if (target.classList.contains("option")){
+        this.selected = target.innerText
+        this.renderOptions()
+      }
+    })
+  }
 }
