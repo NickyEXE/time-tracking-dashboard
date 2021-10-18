@@ -12,7 +12,7 @@ export default class Activity {
 
   render(){
     const container = document.createElement("div")
-    container.classList.add("activity-container", this.name)
+    container.classList.add("activity-container", this.name.toLowerCase().split(" ").join(""))
     container.innerHTML = `
       <div class="activity">
         <div class="title">${this.name}<span>...</span></div>
