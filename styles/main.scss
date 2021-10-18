@@ -1,5 +1,12 @@
-nav {
-  ul {
-    margin: auto;
-  }
-}
+@import
+  'sass/base/base',
+  'sass/base/fonts';
+
+@import
+  'sass/abstracts/variables';
+
+@import
+  'sass/pages/home';
+
+@import
+  'sass/themes/theme';
