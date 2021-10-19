@@ -1,0 +1,11 @@
+body {
+  background-color: $very-dark-blue;
+  color: white;
+  font-family: $text-stack;
+  font-weight: 18px;
+  display: grid;
+
+  @media (max-width: 375px){
+    display: block;
+  }
+}

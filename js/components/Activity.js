@@ -1,4 +1,5 @@
 import { dom } from "../exports.js"
+
 export default class Activity {
 
   constructor(name, times, tracker){
@@ -15,9 +16,10 @@ export default class Activity {
     container.classList.add("activity-container", this.name.toLowerCase().split(" ").join(""))
     container.innerHTML = `
       <div class="activity">
-        <div class="title">${this.name}<span>...</span></div>
-        <div class="hours">${this.daily[0]}</div>
-        <div class="previous">Last Day - ${this.daily[1]}</div>
+        <p class="title">${this.name}</p>
+        <p>...</p>
+        <p class="hours">${this.daily[0]}</p>
+        <p class="previous">Last Day - ${this.daily[1]}</p>
       </div>
     `
     dom.main.appendChild(container)

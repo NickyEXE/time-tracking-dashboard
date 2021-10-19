@@ -1,14 +1,16 @@
 @import
-  'sass/base/base',
-  'sass/base/fonts';
+  'sass/abstracts/variables',
+  'sass/abstracts/mixins';
 
 @import
-  'sass/abstracts/variables';
+  'sass/base/base',
+  'sass/base/fonts';
 
 @import
   'sass/pages/home';
 
 @import
+  'sass/components/activity-container.scss',
   'sass/components/attribution.scss';
 
 @import

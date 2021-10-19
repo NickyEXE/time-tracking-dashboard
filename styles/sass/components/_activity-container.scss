@@ -1,0 +1,47 @@
+.activity-container {
+  border-radius: 1em;
+  background-color: $dark-blue;
+  margin: 1em .5em;
+  max-width: 100%;
+  font-weight: 300;
+  padding: 1.5em 1em;
+  box-sizing: border-box;
+
+  .activity {
+    display: grid;
+    grid-template: 30% 70% / 30% 70%;
+    row-gap: 8px;
+    p {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      width: 100%;
+    }
+    :nth-child(even){
+      justify-content: right;
+      text-align: right;
+      color: $pale-blue;
+    }
+
+    :nth-child(2){
+      font-weight: 500;
+      font-size: 1em
+    }
+
+    :nth-child(4){
+      font-weight: 300;
+      // font-size: 14px;
+    }
+  }
+
+
+
+  .title {
+    font-weight: 500;
+  }
+
+  .hours {
+    font-size: 1.75em;
+    font-weight: 300;
+  }
+}
