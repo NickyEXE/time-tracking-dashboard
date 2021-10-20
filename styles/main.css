@@ -77,21 +77,32 @@ main .self-care {
 aside {
   border-radius: 1em;
   background-color: #1c1f4a;
-  margin: 1em .5em 1em 0; }
+  margin: 1em .5em; }
   aside .profile {
     border-radius: 1em;
     position: relative;
     background-color: #5847eb;
-    padding: 1em;
+    padding: 2em;
     display: grid;
-    grid-template-columns: 30% 70%; }
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1em; }
     aside .profile img {
       width: 60px;
       margin: auto auto;
       border: solid white 3px;
       border-radius: 100%; }
+  aside .name-card {
+    font-weight: 300;
+    margin: auto 0; }
+    aside .name-card p {
+      margin: .25em; }
+    aside .name-card :first-child {
+      color: #bdc1ff; }
+    aside .name-card :nth-child(2) {
+      font-size: 1.5em; }
   aside nav {
     display: grid;
+    padding: .5em;
     grid-template-columns: 1fr 1fr 1fr; }
     aside nav p {
       text-align: center;
