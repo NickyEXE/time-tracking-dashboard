@@ -1,8 +1,25 @@
-.activity-container {
-  border-radius: 1em;
-  background-color: $dark-blue;
+main {
+  @each $name, $color in $colors {
+    @include background($name, $color)
+  }
+}
+
+.activity-background {
+  @include rounded;
   margin: 1em .5em;
-  max-width: 100%;
+  width: 100%;
+  height: 108px;
+  font-weight: 300;
+  padding: 2em 0 2em 0;
+}
+
+
+.activity-container {
+  @include rounded;
+  position: absolute;
+  // top: 10px;
+  background-color: $dark-blue;
+  width: 100%;
   font-weight: 300;
   padding: 1.5em 1em;
   box-sizing: border-box;
@@ -33,8 +50,6 @@
       // font-size: 14px;
     }
   }
-
-
 
   .title {
     font-weight: 500;

@@ -13,13 +13,15 @@ export default class Activity {
 
   render(){
     const container = document.createElement("div")
-    container.classList.add("activity-container", this.name.toLowerCase().split(" ").join(""))
+    container.classList.add("activity-background", this.name.toLowerCase().split(" ").join(""))
     container.innerHTML = `
-      <div class="activity">
-        <p class="title">${this.name}</p>
-        <p>...</p>
-        <p class="hours">${this.daily[0]}</p>
-        <p class="previous">Last Day - ${this.daily[1]}</p>
+      <div class="activity-container">
+        <div class="activity">
+          <p class="title">${this.name}</p>
+          <p>...</p>
+          <p class="hours">${this.daily[0]}</p>
+          <p class="previous">Last Day - ${this.daily[1]}</p>
+        </div>
       </div>
     `
     dom.main.appendChild(container)
