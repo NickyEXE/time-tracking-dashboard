@@ -31,8 +31,8 @@ main .exercise {
 main .social {
   background-image: url("../../../images/icon-social.svg");
   background-color: #7536d3; }
-main .selfcare {
-  background-image: url("../../../images/icon-selfcare.svg");
+main .self-care {
+  background-image: url("../../../images/icon-self-care.svg");
   background-color: #f1c65b; }
 
 .activity-background {
@@ -81,7 +81,8 @@ aside {
   aside .profile {
     border-radius: 1em;
     position: relative;
-    background-color: #5847eb; }
+    background-color: #5847eb;
+    padding: 1em; }
   aside nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; }

@@ -13,7 +13,7 @@ export default class Activity {
 
   render(){
     const container = document.createElement("div")
-    container.classList.add("activity-background", this.name.toLowerCase().split(" ").join(""))
+    container.classList.add("activity-background", this.name.toLowerCase().split(" ").join("-"))
     container.innerHTML = `
       <div class="activity-container">
         <div class="activity">
