@@ -7,19 +7,18 @@ main {
 .activity-background {
   @include rounded;
   margin: 1em .5em;
-  width: 100%;
   height: 108px;
   font-weight: 300;
-  padding: 2em 0 2em 0;
+  padding: 2em 0 0 0;
 }
 
 
 .activity-container {
   @include rounded;
-  position: absolute;
+  position: relative;
   // top: 10px;
   background-color: $dark-blue;
-  width: 100%;
+  max-width: 100%;
   font-weight: 300;
   padding: 1.5em 1em;
   box-sizing: border-box;
