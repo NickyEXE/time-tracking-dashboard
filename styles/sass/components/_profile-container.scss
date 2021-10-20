@@ -1,0 +1,25 @@
+aside {
+  @include rounded;
+  background-color: $dark-blue;
+  margin: 1em .5em 1em 0;
+
+  .profile {
+    @include rounded;
+    position: relative;
+    background-color: $blue;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    p {
+      text-align: center;
+      color: $desaturated-blue;
+    }
+
+    p.selected {
+      color: white;
+    }
+  }
+}

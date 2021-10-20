@@ -74,6 +74,23 @@ main .selfcare {
     font-size: 1.75em;
     font-weight: 300; }
 
+aside {
+  border-radius: 1em;
+  background-color: #1c1f4a;
+  margin: 1em .5em 1em 0; }
+  aside .profile {
+    border-radius: 1em;
+    position: relative;
+    background-color: #5847eb; }
+  aside nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    aside nav p {
+      text-align: center;
+      color: #6f76c8; }
+    aside nav p.selected {
+      color: white; }
+
 .attribution {
   font-size: 11px;
   text-align: center; }

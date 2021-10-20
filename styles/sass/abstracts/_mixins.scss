@@ -3,7 +3,7 @@
 }
 
 @mixin background($name, $color){
-.#{$name}{
+  .#{$name}{
     background-image: url("../../../images/icon-#{$name}.svg");
     background-color: $color;
   }
