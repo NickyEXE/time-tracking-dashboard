@@ -18,37 +18,48 @@ body {
 
 main .work {
   background-image: url("../../../images/icon-work.svg");
-  background-color: #ff8c66; }
+  background-color: #ff8c66;
+  background-repeat: no-repeat;
+  background-position: right 16px top -8px; }
 main .play {
   background-image: url("../../../images/icon-play.svg");
-  background-color: #56c2e6; }
+  background-color: #56c2e6;
+  background-repeat: no-repeat;
+  background-position: right 16px top -8px; }
 main .study {
   background-image: url("../../../images/icon-study.svg");
-  background-color: #ff5c7c; }
+  background-color: #ff5c7c;
+  background-repeat: no-repeat;
+  background-position: right 16px top -8px; }
 main .exercise {
   background-image: url("../../../images/icon-exercise.svg");
-  background-color: #4acf81; }
+  background-color: #4acf81;
+  background-repeat: no-repeat;
+  background-position: right 16px top -8px; }
 main .social {
   background-image: url("../../../images/icon-social.svg");
-  background-color: #7536d3; }
+  background-color: #7536d3;
+  background-repeat: no-repeat;
+  background-position: right 16px top -8px; }
 main .self-care {
   background-image: url("../../../images/icon-self-care.svg");
-  background-color: #f1c65b; }
+  background-color: #f1c65b;
+  background-repeat: no-repeat;
+  background-position: right 16px top -8px; }
 
 .activity-background {
   border-radius: 1em;
   margin: 1em .5em;
-  height: 108px;
   font-weight: 300;
-  padding: 2em 0 0 0; }
+  padding: 2.5em 0 0 0; }
 
 .activity-container {
   border-radius: 1em;
   position: relative;
   background-color: #1c1f4a;
-  max-width: 100%;
+  width: 100%;
   font-weight: 300;
-  padding: 1.5em 1em;
+  padding: 1.5em 1.5em;
   box-sizing: border-box; }
   .activity-container .activity {
     display: grid;

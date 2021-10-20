@@ -6,5 +6,7 @@
   .#{$name}{
     background-image: url("../../../images/icon-#{$name}.svg");
     background-color: $color;
+    background-repeat: no-repeat;
+    background-position: right 16px top -8px;
   }
 }
