@@ -82,7 +82,14 @@ aside {
     border-radius: 1em;
     position: relative;
     background-color: #5847eb;
-    padding: 1em; }
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 30% 70%; }
+    aside .profile img {
+      width: 60px;
+      margin: auto auto;
+      border: solid white 3px;
+      border-radius: 100%; }
   aside nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; }

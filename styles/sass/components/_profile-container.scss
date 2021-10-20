@@ -8,6 +8,15 @@ aside {
     position: relative;
     background-color: $blue;
     padding: 1em;
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    img {
+      width: 60px;
+      margin: auto auto;
+      border: solid white 3px;
+      border-radius: 100%;
+    }
   }
 
   nav {
